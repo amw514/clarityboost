@@ -19,13 +19,16 @@
     "mongoose": "^8.5.1",
     "moongoose": "^0.0.5",
     "next": "14.2.5",
+    "qs": "^6.12.3",
     "react": "^18",
     "react-dom": "^18",
+    "svix": "^1.25.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/qs": "^6.9.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
