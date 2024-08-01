@@ -24,6 +24,7 @@ import { AspectRatioKey, debounce, deepMergeObjects } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { updateCredits } from "@/lib/actions/user.action";
 import MediaUploader from "./MediaUploader";
+import TransformedImage from "./TransformedImage";
 
 export const formSchema = z.object({
   title: z.string(),
@@ -117,7 +118,7 @@ const TransformationForm = ({
     setNewTransformation(null);
 
     startTransition(async () => {
-      //   await updateCredits(userId, creditFee);
+        await updateCredits(userId, creditFee);
     });
   };
 
@@ -229,7 +230,7 @@ const TransformationForm = ({
               />
             )}
           />
-{/* 
+ 
           <TransformedImage
             image={image}
             type={type}
@@ -237,7 +238,7 @@ const TransformationForm = ({
             isTransforming={isTransforming}
             setIsTransforming={setIsTransforming}
             transformationConfig={transformationConfig}
-          /> */}
+          /> 
         </div>
 
         <div className="flex flex-col gap-4">
