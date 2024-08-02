@@ -3,6 +3,8 @@ import { IBM_Plex_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const IBMPlex = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -31,6 +33,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={cn("font-IBMplex antialiased", IBMPlex.variable)}>
           {children}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
